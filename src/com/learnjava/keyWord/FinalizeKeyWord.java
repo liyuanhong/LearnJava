@@ -2,10 +2,17 @@ package com.learnjava.keyWord;
 
 public class FinalizeKeyWord {
 	public static void main(String[] args) {
-		Pelple peo = new Pelple("Lili");
-		peo.printName();
-		Pelple peo1 = new Pelple("liulei");
-		peo1.printName();
+		for(int i = 0;i < 100;i++){
+			Pelple peo = new Pelple("Lili");
+			peo.printName();
+			Pelple peo1 = new Pelple("liulei");
+			peo1.printName();
+		}
+		
+		/*
+		 * 强制执行垃圾回收（当然也可以通过多次重复循环执行程序，来触发垃圾回收动作的执行）
+		 */
+		System.gc();
 	}
 }
 
@@ -25,7 +32,7 @@ class Pelple{
 	 */
 	@Override
 	protected void finalize() throws Throwable {
-		super.finalize();
 		System.out.println("call finalize method !");
+		super.finalize();
 	}
 }
