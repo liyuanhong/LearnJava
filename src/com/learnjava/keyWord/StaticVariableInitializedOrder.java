@@ -14,6 +14,9 @@ public class StaticVariableInitializedOrder {
 	//cla1 不会得到初始化
 	public TestClass1 cla1 = new TestClass1(100);
 	public static TestClass2 cla2 = new TestClass2(800);
+	//cla11的初始化不会打印任何内容，因为静态初始化只在类首次加载的时候才会进行（首次价值是指java虚拟机把class文件读入内存的过程）
+	//而TestClass1在初始化cla2的时候就已经加载过了
+	public TestClass1 cla11 = new TestClass1(111);
 }
 
 class TestClass1{
