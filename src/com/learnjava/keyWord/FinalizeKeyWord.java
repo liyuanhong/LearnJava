@@ -10,7 +10,7 @@ public class FinalizeKeyWord {
 		}
 		
 		/*
-		 * Ç¿ÖÆÖ´ÐÐÀ¬»ø»ØÊÕ£¨µ±È»Ò²¿ÉÒÔÍ¨¹ý¶à´ÎÖØ¸´Ñ­»·Ö´ÐÐ³ÌÐò£¬À´´¥·¢À¬»ø»ØÊÕ¶¯×÷µÄÖ´ÐÐ£©
+		 * å¼ºåˆ¶æ‰§è¡Œåžƒåœ¾å›žæ”¶ï¼ˆå½“ç„¶ä¹Ÿå¯ä»¥é€šè¿‡å¤šæ¬¡é‡å¤å¾ªçŽ¯æ‰§è¡Œç¨‹åºï¼Œæ¥è§¦å‘åžƒåœ¾å›žæ”¶åŠ¨ä½œçš„æ‰§è¡Œï¼‰
 		 */
 		System.gc();
 	}
@@ -27,8 +27,8 @@ class Pelple{
 	}	
 	
 	/*
-	 * finalize ·½·¨ÔÚÀ¬»ø»ØÊÕÆ÷×¼±¸ÊÍ·Å¶ÔÏóÄÚ´æµÄÊ±ºòµ÷ÓÃ
-	 * Ò²¾ÍÊÇËµ£¬À¬»ø»ØÊÕÆ÷ÔÚ×¼±¸ÊÍ·Å¶ÔÏóÄÚ´æµÄÊ±ºò»Øµ÷ÓÃËû
+	 * finalize æ–¹æ³•åœ¨åžƒåœ¾å›žæ”¶å™¨å‡†å¤‡é‡Šæ”¾å¯¹è±¡å†…å­˜çš„æ—¶å€™è°ƒç”¨
+	 * ä¹Ÿå°±æ˜¯è¯´ï¼Œåžƒåœ¾å›žæ”¶å™¨åœ¨å‡†å¤‡é‡Šæ”¾å¯¹è±¡å†…å­˜çš„æ—¶å€™å›žè°ƒç”¨ä»–
 	 */
 	@Override
 	protected void finalize() throws Throwable {

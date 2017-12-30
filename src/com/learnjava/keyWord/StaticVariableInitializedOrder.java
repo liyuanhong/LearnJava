@@ -2,20 +2,20 @@ package com.learnjava.keyWord;
 
 
 /*
- * ÔËĞĞÒÔÏÂÀı×Ó¿ÉÒÔ¿´³ö£º
- * ¾²Ì¬±äÁ¿ÔÚÀà¹¹Ôì·½·¨µ÷ÓÃÖ®Ç°¾ÍÒÑ¾­³õÊ¼»¯ºÃÁË
+ * è¿è¡Œä»¥ä¸‹ä¾‹å­å¯ä»¥çœ‹å‡ºï¼š
+ * é™æ€å˜é‡åœ¨ç±»æ„é€ æ–¹æ³•è°ƒç”¨ä¹‹å‰å°±å·²ç»åˆå§‹åŒ–å¥½äº†
  */
 
 public class StaticVariableInitializedOrder {
-	//ÔÚµ÷ÓÃmain·½·¨Ö®Ç°»áÏÈ³õÊ¼»¯½«¾²Ì¬±äÁ¿ cla2
+	//åœ¨è°ƒç”¨mainæ–¹æ³•ä¹‹å‰ä¼šå…ˆåˆå§‹åŒ–å°†é™æ€å˜é‡ cla2
 	public static void main(String[] args) {
 		System.out.println("the main print");
 	}
-	//cla1 ²»»áµÃµ½³õÊ¼»¯
+	//cla1 ä¸ä¼šå¾—åˆ°åˆå§‹åŒ–
 	public TestClass1 cla1 = new TestClass1(100);
 	public static TestClass2 cla2 = new TestClass2(800);
-	//cla11µÄ³õÊ¼»¯²»»á´òÓ¡ÈÎºÎÄÚÈİ£¬ÒòÎª¾²Ì¬³õÊ¼»¯Ö»ÔÚÀàÊ×´Î¼ÓÔØµÄÊ±ºò²Å»á½øĞĞ£¨Ê×´Î¼ÛÖµÊÇÖ¸javaĞéÄâ»ú°ÑclassÎÄ¼ş¶ÁÈëÄÚ´æµÄ¹ı³Ì£©
-	//¶øTestClass1ÔÚ³õÊ¼»¯cla2µÄÊ±ºò¾ÍÒÑ¾­¼ÓÔØ¹ıÁË
+	//cla11çš„åˆå§‹åŒ–ä¸ä¼šæ‰“å°ä»»ä½•å†…å®¹ï¼Œå› ä¸ºé™æ€åˆå§‹åŒ–åªåœ¨ç±»é¦–æ¬¡åŠ è½½çš„æ—¶å€™æ‰ä¼šè¿›è¡Œï¼ˆé¦–æ¬¡ä»·å€¼æ˜¯æŒ‡javaè™šæ‹ŸæœºæŠŠclassæ–‡ä»¶è¯»å…¥å†…å­˜çš„è¿‡ç¨‹ï¼‰
+	//è€ŒTestClass1åœ¨åˆå§‹åŒ–cla2çš„æ—¶å€™å°±å·²ç»åŠ è½½è¿‡äº†
 	public TestClass1 cla11 = new TestClass1(111);
 }
 
@@ -30,7 +30,7 @@ class TestClass1{
 class TestClass2{
 	public static String str2 = "hello--2";
 	public static TestClass1 te1 = new TestClass1(0);
-	//ÔÚµ÷ÓÃ¹¹Ôì·½·¨Ö®Ç°»áÏÈ³õÊ¼»¯te1
+	//åœ¨è°ƒç”¨æ„é€ æ–¹æ³•ä¹‹å‰ä¼šå…ˆåˆå§‹åŒ–te1
 	TestClass2(int var){
 		System.out.println(str2);
 		System.out.println("TestClass2-----" + var);
