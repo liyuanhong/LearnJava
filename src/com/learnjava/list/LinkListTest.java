@@ -112,9 +112,9 @@ public class LinkListTest {
 	public static void main(String[] args) {
 		MyLinkList linklist = new MyLinkList();
 		linklist.insert("liuhai",25);
-		linklist.insert("刘涛",25);
+		linklist.insert("涛涛",25);
 		linklist.insert("娜娜",25);
-		linklist.insert("王鑫鑫",24);
+		linklist.insert("鑫鑫",24);
 		linklist.insert("暄暄",27);
 		linklist.insert("蚩蚩",25);
 		linklist.insert("慧慧",25);
