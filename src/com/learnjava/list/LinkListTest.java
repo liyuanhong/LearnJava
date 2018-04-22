@@ -60,6 +60,7 @@ class MyLinkList{
 		return i;
 	}
 	
+	//根据索引获取节点
 	MyNode getIndexOfList(int index) {
 		if(index > getLength()) {
 			return null;
@@ -81,12 +82,14 @@ class MyLinkList{
 		if(first == delNode) {
 			first = first.next;
 		}else if(last == delNode){
-			MyNode newNode = first;
+			MyNode current = first;
 			MyNode tmp = first;
-			while(newNode != delNode) {
-				newNode = tmp.next;
+			while(tmp != delNode) {
+				current = tmp;
+				tmp = tmp.next;
 			}
-			tmp.next = null;
+			current.next = null;
+			last = current;
 		}else {
 			MyNode newNode = first;
 			MyNode tmp = first;
@@ -106,6 +109,24 @@ class MyLinkList{
 			current = current.next;
 		}
 	}
+	
+	//反转链表
+	void reverseMyLinklist() {
+		int len = getLength();
+		MyNode current = first;
+		MyNode after = current.next;
+		MyNode before = null;
+		first.next = before;
+		while(after != null) {
+			before = current;
+			current = after;
+			after = current.next;
+			current.next = before;
+		}
+		MyNode temp = last;
+		first = last;
+		last = temp;
+	}
 }
 
 public class LinkListTest {
@@ -120,21 +141,25 @@ public class LinkListTest {
 		linklist.insert("慧慧",25);
 		linklist.printMyLinkList();
 		//打印节点的长度
-		System.out.println(linklist.getLength());
-		System.out.println("---------------------------");
+		System.out.println("链表长度为：" + linklist.getLength());
+		System.out.println("获取元素的第六个节点---------------------------");
 		//获取并打印节点的第六个元素
 		linklist.getIndexOfList(6).printNode();
 		//删除节点的第7个元素
-		System.out.println("---------------------------");
+		System.out.println("删除第七个节点---------------------------");
 		linklist.delAnNode(linklist.getIndexOfList(7));
 		linklist.printMyLinkList();
 		//再删除节点的第一个元素
-		System.out.println("---------------------------");
+		System.out.println("删除第一个节点---------------------------");
 		linklist.delAnNode(linklist.getIndexOfList(1));
 		linklist.printMyLinkList();
 		//.再删除节点的第三个元素
-		System.out.println("---------------------------");
+		System.out.println("删除第三个节点---------------------------");
 		linklist.delAnNode(linklist.getIndexOfList(3));
+		linklist.printMyLinkList();
+		//反转链表
+		System.out.println("反转链表---------------------------");
+		linklist.reverseMyLinklist();
 		linklist.printMyLinkList();
 		
 	}
