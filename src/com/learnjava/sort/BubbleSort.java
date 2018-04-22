@@ -43,4 +43,29 @@ class BubbleSortCase{
 		}
 		System.out.println("排序后的结果为：" + Arrays.toString(arr));
 	}
+	
+	//冒泡排序方法3，增加了是否排好序的逻辑，减少了排序的次数
+	void printBubbleSortCase3(int arr[]) {
+		int len = arr.length;
+		//判断是否还在排序，如果没有排序了则判断为已经排好序，从而停止排序
+		int flag = 1;
+		for(int i = len - 1;i > 0;i--) {
+			if(flag != 0) {
+				flag = 0;
+				for(int j = 0;j < i;j++) {
+					if(arr[j] > arr[j + 1]) {
+						int temp = arr[j];
+						arr[j] = arr[j + 1];
+						arr[j + 1] = temp;
+						flag++;
+					}
+				}
+				System.out.println("第" + (len -i) + "次排序后为：" + Arrays.toString(arr));
+			}else {
+				break;
+			}
+		}
+		System.out.println("排序后的结果为：" + Arrays.toString(arr));
+	}
+	
 }
