@@ -24,6 +24,7 @@ class BinaryTreeNode{
 	}
 }
 
+//定义一颗二叉树
 class BinaryTree{
 	BinaryTreeNode rootNode = null;
 	
