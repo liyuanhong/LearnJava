@@ -1,5 +1,9 @@
 package com.learnjava.tree;
 
+/*
+ * 通过数组来实现二叉树
+ */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
