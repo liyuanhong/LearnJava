@@ -7,7 +7,18 @@ package com.learnjava.tree;
 public class ListBinaryTree {
 	public static void main(String[] args) {
 		int arr[] = {5,2,7,4,9,1,3};
+		System.out.println("生成的二叉数组为：");
 		BinaryTree tree = new BinaryTree(arr);
+		System.out.println("");
+		System.out.println("使用中序遍历：");
+		tree.inOrder(tree.rootNode);
+		System.out.println("");
+		System.out.println("使用前序遍历：");
+		tree.preOrder(tree.rootNode);
+		System.out.println("");
+		System.out.println("使用后序遍历：");
+		tree.postOrder(tree.rootNode);
+		System.out.println("");
 	}
 }
 
@@ -61,6 +72,33 @@ class BinaryTree{
 					currentNode = currentNode.rightNode;
 				}
 			}
+		}
+	}
+	
+	//使用中序法遍历二叉树
+	public void inOrder(BinaryTreeNode node) {
+		if(node != null) {
+			inOrder(node.leftNode);
+			System.out.print("[" + node.value + "]");
+			inOrder(node.rightNode);
+		}
+	}
+	
+	//使用前序法遍历二叉树
+	public void preOrder(BinaryTreeNode node) {
+		if(node != null) {
+			System.out.print("[" + node.value + "]");
+			preOrder(node.leftNode);
+			preOrder(node.rightNode);
+		}
+	}
+	
+	//使用后序发遍历二叉树
+	public void postOrder(BinaryTreeNode node) {
+		if(node != null) {
+			preOrder(node.leftNode);
+			preOrder(node.rightNode);
+			System.out.print("[" + node.value + "]");
 		}
 	}
 }
