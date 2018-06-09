@@ -1,4 +1,4 @@
-package com.learnjava.temp;
+                                                                                                                                                                                                                                                                                                                               package com.learnjava.temp;
 
 public class VariableTest {
 	public static int var1 = 1;
