@@ -16,6 +16,7 @@ package com.learnjava.graph;
 
 public class LinkUndirectedGraph {
 	public static void main(String[] args) {
+		//图形变现数组声明
 		int[][] data = {{1,2},{1,5},{2,1},{2,3},{2,4},{3,2},{3,4},{3,5},{4,2},{4,3},{4,5},{5,1},{5,3},{5,4}};
 		GraphLink head[] = new GraphLink[6];
 		
