@@ -1,4 +1,4 @@
-package com.learnjava.search;
+package com.learnjava.dataStucture.search;
 
 /*
  * 二分查找的实现

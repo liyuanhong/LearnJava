@@ -1,4 +1,4 @@
-package com.learnjava.graph;
+package com.learnjava.dataStucture.graph;
 
 /*
  * 使用深度优先法来遍历图

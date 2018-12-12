@@ -1,4 +1,4 @@
-package com.learnjava.stack;
+package com.learnjava.dataStucture.stack;
 
 //使用数组来模拟栈
 class MyStackByArray {

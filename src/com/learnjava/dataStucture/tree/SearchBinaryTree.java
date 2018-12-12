@@ -1,4 +1,4 @@
-package com.learnjava.tree;
+package com.learnjava.dataStucture.tree;
 
 /*
  * 如果一颗树的每一个节点的数据大于左子节点并且小于右子节点，这棵树就叫做“二分树”

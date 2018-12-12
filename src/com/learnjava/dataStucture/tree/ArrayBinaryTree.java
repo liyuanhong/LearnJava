@@ -1,4 +1,4 @@
-package com.learnjava.tree;
+package com.learnjava.dataStucture.tree;
 
 /*
  * 通过数组来实现二叉树

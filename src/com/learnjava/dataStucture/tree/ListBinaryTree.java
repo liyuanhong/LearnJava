@@ -1,4 +1,4 @@
-package com.learnjava.tree;
+package com.learnjava.dataStucture.tree;
 
 
 /*

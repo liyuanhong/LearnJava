@@ -1,4 +1,4 @@
-package com.learnjava.search;
+package com.learnjava.dataStucture.search;
 
 
 //通过线性探测发来解决哈希算法产生的碰撞问题

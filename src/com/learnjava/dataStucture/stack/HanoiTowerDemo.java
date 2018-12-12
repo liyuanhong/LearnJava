@@ -1,4 +1,4 @@
-package com.learnjava.stack;
+package com.learnjava.dataStucture.stack;
 
 import java.util.Arrays;
 

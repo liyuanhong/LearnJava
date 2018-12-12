@@ -1,4 +1,4 @@
-package com.learnjava.graph;
+package com.learnjava.dataStucture.graph;
 
 /*
  * 使用矩阵来表示有向图

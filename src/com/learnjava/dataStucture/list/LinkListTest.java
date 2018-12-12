@@ -1,4 +1,4 @@
-package com.learnjava.list;
+package com.learnjava.dataStucture.list;
 
 
 /*

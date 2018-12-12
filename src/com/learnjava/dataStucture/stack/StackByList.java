@@ -1,4 +1,4 @@
-package com.learnjava.stack;
+package com.learnjava.dataStucture.stack;
 
 class StackNode{
 	int data;

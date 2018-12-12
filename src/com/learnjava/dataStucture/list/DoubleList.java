@@ -1,4 +1,4 @@
-package com.learnjava.list;
+package com.learnjava.dataStucture.list;
 
 //定义一个双向链表的节点
 class DoubleListNode{

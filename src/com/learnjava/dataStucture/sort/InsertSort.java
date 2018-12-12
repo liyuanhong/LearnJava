@@ -1,4 +1,4 @@
-package com.learnjava.sort;
+package com.learnjava.dataStucture.sort;
 
 //插入排序
 

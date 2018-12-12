@@ -1,4 +1,4 @@
-package com.learnjava.array;
+package com.learnjava.dataStucture.array;
 
 /*
  * 使用二维数组来实现矩阵的相加，举证如下
