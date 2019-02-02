@@ -7,6 +7,7 @@ package com.learnjava.multyThread;
  *						二：修饰代码块
  *						三：修饰一个静态方法
  *						四：修饰一个类
+ *		参考地址：https://blog.csdn.net/sinat_32588261/article/details/72880159
  ********************************************/
 
 public class SynchronizedTest {
