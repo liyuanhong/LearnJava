@@ -11,6 +11,13 @@ import java.io.StringReader;
  * java字符流学习 Reader
  * 参考地址：https://www.cnblogs.com/liyuanhong/articles/10356722.html
  */
+
+/*
+ * 字符流与字节流的区别：
+ * 设备上的数据无论是图片或者视频，文字，它们都以二进制存储的。二进制的最终都是以一个8位为数据单元进行体现，所以计算机中的最小数据单元就是字节。
+ * 意味着，字节流可以处理设备上的所有数据，所以字节流一样可以处理字符数据。
+ * 结论：只要是处理纯文本数据，就优先考虑使用字符流。 除此之外都使用字节流。
+ */
 public class LearnReader {
 	public static void main(String[] args) {
 		StringReaderTest test1 = new StringReaderTest();
@@ -28,7 +35,8 @@ class StringReaderTest{
 		//BufferedReader属于缓冲流，增加缓冲功能，避免频繁读写硬盘
 		BufferedReader re = new BufferedReader(sRe);
 		try {
-			System.out.println(re.read());
+			System.out.println(re.readLine());
+			re.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -54,10 +62,11 @@ class FileReaderTest{
 				txt = re1.readLine();
 				System.out.println(txt);
 			}while(txt != null);
+			
+			re1.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
 	}
 }
 
